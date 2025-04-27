@@ -94,9 +94,11 @@ const App = () => {
   const titleRef = React.useRef();
 
   return (
-    <>
+    <BrowserRouter basename="/personal-portfolio">
       {navBar.show && <Navbar ref={titleRef} />}
-      <Home ref={titleRef} />
+      <Routes>
+        <Route path="/" element={<Home ref={titleRef} />} />
+      </Routes>
       <Footer>
         {getInTouch.show && (
           <GetInTouch
@@ -106,9 +108,8 @@ const App = () => {
           />
         )}
       </Footer>
-    </>
+    </BrowserRouter>
   );
 };
-
 
 export default App;

@@ -56,14 +56,14 @@ const experiences = {
       company: "Mackenzie Investments",
       // team: "Team: Deploys",
       customWidth: "40%",
-      companylogo: require('../assets/img/mackenzie.png'),
+      companylogo: require('../assets/img/macken.png'),
       date: 'May 2025 – Present',
     },
     {
       role: 'High Voltage Circuit Designer',
       company: "MAC Formula Electric",
       // team: "Team: Deploys",
-      companylogo: require('../assets/img/MACFE.png'),
+      companylogo: require('../assets/img/images.png'),
       date: 'September 2024 – Present',
     },
   ]
@@ -79,7 +79,7 @@ const repos = {
   heading: "Recent Projects",
   gitHubUsername: "AryanKarnati", //i.e."johnDoe12Gh"
   reposLength: 0,
-  specificRepos: ["Spatial-Mapping-LIDAR-System","STM32-Bootloader","QonnectR", "personal-portfolio-website"],
+  specificRepos: ["Spatial-Mapping-LIDAR-System","STM32-Bootloader","QonnectR", "personal-portfolio"],
 };
 
 // Leadership SECTION
