@@ -6,30 +6,18 @@ const navBar = {
 // Main Body SECTION
 const mainBody = {
   gradientColors: "#4484ce, #1ad7c0, #ff9b11, #9b59b6, #ff7f7f, #ecf0f1",
-  firstName: "Hashir",
+  firstName: "Aryan",
   middleName: "",
-  lastName: "Shoaib",
-  message: " Passionate about changing the world with technology. ",
+  lastName: "Karnati",
+  message: " Designing low-level systems with high-impact results. ",
   icons: [
     {
       image: "fa-github",
-      url: "https://github.com/hashirshoaeb",
-    },
-    {
-      image: "fa-facebook",
-      url: "https://www.facebook.com/hashirshoaeb",
-    },
-    {
-      image: "fa-instagram",
-      url: "https://www.instagram.com/hashirshoaeb/",
+      url: "https://github.com/AryanKarnati",
     },
     {
       image: "fa-linkedin",
-      url: "https://www.linkedin.com/in/hashirshoaeb/",
-    },
-    {
-      image: "fa-twitter",
-      url: "https://www.twitter.com/hashirshoaeb/",
+      url: "https://www.linkedin.com/in/aryankarnati/",
     },
   ],
 };
@@ -51,12 +39,35 @@ const mainBody = {
 const about = {
   show: true,
   heading: "About Me",
-  imageLink: require("../editable-stuff/hashirshoaeb.png"),
+  imageLink: require("../editable-stuff/aryan.png"),
   imageSize: 375,
   message:
-    "My name is Hashir Shoaib. I’m a graduate of 2020 from National University of Sciences and Technology at Islamabad with a degree in Computer Engineering. I'm most passionate about giving back to the community, and my goal is to pursue this passion within the field of software engineering. In my free time I like working on open source projects.",
-  resume: "https://docs.google.com/document/d/13_PWdhThMr6roxb-UFiJj4YAFOj8e_bv3Vx9UHQdyBQ/edit?usp=sharing",
+    "My name is Aryan Karnati. I’m an Electrical Engineering Co-op student at McMaster University with a strong interest in embedded systems, digital design, and hardware development. I’m passionate about applying my technical skills to solve real-world problems and continuously learning through hands-on experiences. In my free time, I enjoy exploring new technologies and building personal projects.",
+  resume: require("../editable-stuff/Resume_AryanKarnati.pdf"),
 };
+
+const experiences = {
+  show: true,
+  id: "experience",
+  heading: "Experience",
+  data: [
+    {
+      role: 'Quality Managment Intern',
+      company: "Mackenzie Investments",
+      // team: "Team: Deploys",
+      customWidth: "40%",
+      companylogo: require('../assets/img/mackenzie.png'),
+      date: 'May 2025 – Present',
+    },
+    {
+      role: 'High Voltage Circuit Designer',
+      company: "MAC Formula Electric",
+      // team: "Team: Deploys",
+      companylogo: require('../assets/img/MACFE.png'),
+      date: 'September 2024 – Present',
+    },
+  ]
+}
 
 // PROJECTS SECTION
 // Setting up project lenght will automatically fetch your that number of recently updated projects, or you can set this field 0 to show none.
@@ -66,9 +77,9 @@ const about = {
 const repos = {
   show: true,
   heading: "Recent Projects",
-  gitHubUsername: "hashirshoaeb", //i.e."johnDoe12Gh"
-  reposLength: 4,
-  specificRepos: [],
+  gitHubUsername: "AryanKarnati", //i.e."johnDoe12Gh"
+  reposLength: 0,
+  specificRepos: ["Spatial-Mapping-LIDAR-System","STM32-Bootloader","QonnectR", "personal-portfolio-website"],
 };
 
 // Leadership SECTION
@@ -79,12 +90,12 @@ const leadership = {
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae auctor eu augue ut lectus arcu bibendum at varius. Libero justo laoreet sit amet cursus sit amet. Imperdiet dui accumsan sit amet nulla facilisi morbi. At auctor urna nunc id. Iaculis urna id volutpat lacus laoreet non curabitur gravida. Et magnis dis parturient montes nascetur ridiculus mus mauris. In nisl nisi scelerisque eu ultrices vitae auctor. Mattis nunc sed blandit libero volutpat sed cras ornare. Pulvinar neque laoreet suspendisse interdum consectetur libero.",
   images: [
     { 
-      img: require("../editable-stuff/hashirshoaeb.png"), 
+      img: require("../editable-stuff/aryan.png"), 
       label: "First slide label", 
       paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum." 
     },
     { 
-      img: require("../editable-stuff/hashirshoaeb.png"), 
+      img: require("../editable-stuff/aryan.png"), 
       label: "Second slide label", 
       paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum." 
     },
@@ -100,24 +111,24 @@ const skills = {
   show: true,
   heading: "Skills",
   hardSkills: [
-    { name: "Python", value: 90 },
-    { name: "SQL", value: 75 },
-    { name: "Data Structures", value: 85 },
-    { name: "C/C++", value: 65 },
-    { name: "JavaScript", value: 90 },
-    { name: "React", value: 65 },
-    { name: "HTML/CSS", value: 55 },
-    { name: "C#", value: 80 },
+    { name: "C/C++", value: 95 },
+    { name: "Python", value: 80 },
+    { name: "SystemVerilog", value: 90 },
+    { name: "Verilog", value: 95 },
+    { name: "VHDL", value: 75 },
+    { name: "Java", value: 60 },
+    { name: "Git", value: 70 },
+    { name: "Bash", value: 70 },
   ],
   softSkills: [
-    { name: "Goal-Oriented", value: 80 },
-    { name: "Collaboration", value: 90 },
-    { name: "Positivity", value: 75 },
-    { name: "Adaptability", value: 85 },
-    { name: "Problem Solving", value: 75 },
-    { name: "Empathy", value: 90 },
-    { name: "Organization", value: 70 },
-    { name: "Creativity", value: 90 },
+    { name: "MATLAB", value: 80 },
+    { name: "Quartus", value: 90 },
+    { name: "ModelSim", value: 75 },
+    { name: "Altium Desginer", value: 85 },
+    { name: "Keil uVision", value: 75 },
+    { name: "LTSpice", value: 80 },
+    { name: "VS Code", value: 70 },
+    { name: "SymbiYosys", value: 70 },
   ],
 };
 
@@ -126,26 +137,10 @@ const getInTouch = {
   show: true,
   heading: "Get In Touch",
   message:
-    "I'm currently looking for full-time Software Engineering or Machine Learning opportunities! If you know of any positions available, if you have any questions, or if you just want to say hi, please feel free to email me at",
-  email: "hashirshoaeb@gmail.com",
+    "I'm currently looking for embedded systems and digital design/verification internships. If you have any opportunities or would like to connect, please feel free to reach out!",
+  email: "19aryank@gmail.com@gmail.com",
 };
 
-const experiences = {
-  show: false,
-  heading: "Experiences",
-  data: [
-    {
-      role: 'Software Engineer',// Here Add Company Name
-      companylogo: require('../assets/img/dell.png'),
-      date: 'June 2018 – Present',
-    },
-    {
-      role: 'Front-End Developer',
-      companylogo: require('../assets/img/boeing.png'),
-      date: 'May 2017 – May 2018',
-    },
-  ]
-}
 
 // Blog SECTION
 // const blog = {
