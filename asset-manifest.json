@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/personal-portfolio/static/css/main.e0124588.css",
-    "main.js": "/personal-portfolio/static/js/main.233178ff.js",
+    "main.js": "/personal-portfolio/static/js/main.ed9fed98.js",
     "static/js/787.4b24f717.chunk.js": "/personal-portfolio/static/js/787.4b24f717.chunk.js",
     "static/media/aryan.png": "/personal-portfolio/static/media/aryan.e80fd2324659f30de912.png",
     "static/media/matlab.png": "/personal-portfolio/static/media/matlab.7d87102ab9b9f9e60a2c.png",
@@ -12,16 +12,15 @@
     "static/media/ltspice.png": "/personal-portfolio/static/media/ltspice.1c3c019d67d7688c58e7.png",
     "static/media/altium.png": "/personal-portfolio/static/media/altium.e4d915db84978f37ee17.png",
     "static/media/images.png": "/personal-portfolio/static/media/images.c8cf96b519cbbb8bb025.png",
+    "static/media/sv.png": "/personal-portfolio/static/media/sv.0077bbbb76ad2da00e5f.png",
     "static/media/git.png": "/personal-portfolio/static/media/git.6c050f34460a4f1fa407.png",
-    "static/media/SystemVerilog.svg": "/personal-portfolio/static/media/SystemVerilog.b9ec9b04728d86f3de60164f303b5009.svg",
-    "static/media/bash.svg": "/personal-portfolio/static/media/bash.12b9574c657e4e3629a692b1f78fdb65.svg",
     "index.html": "/personal-portfolio/index.html",
     "main.e0124588.css.map": "/personal-portfolio/static/css/main.e0124588.css.map",
-    "main.233178ff.js.map": "/personal-portfolio/static/js/main.233178ff.js.map",
+    "main.ed9fed98.js.map": "/personal-portfolio/static/js/main.ed9fed98.js.map",
     "787.4b24f717.chunk.js.map": "/personal-portfolio/static/js/787.4b24f717.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e0124588.css",
-    "static/js/main.233178ff.js"
+    "static/js/main.ed9fed98.js"
   ]
 }
