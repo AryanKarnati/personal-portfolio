@@ -1,13 +1,14 @@
 {
   "files": {
     "main.css": "/personal-portfolio/static/css/main.560be21e.css",
-    "main.js": "/personal-portfolio/static/js/main.25783fac.js",
+    "main.js": "/personal-portfolio/static/js/main.24618171.js",
     "static/js/787.4b24f717.chunk.js": "/personal-portfolio/static/js/787.4b24f717.chunk.js",
     "static/media/Lidar.png": "/personal-portfolio/static/media/Lidar.dbea485bc0555bbcebef.png",
     "static/media/aryan.png": "/personal-portfolio/static/media/aryan.e80fd2324659f30de912.png",
     "static/media/pp.png": "/personal-portfolio/static/media/pp.e8517dbb6a13cc717f47.png",
     "static/media/matlab.png": "/personal-portfolio/static/media/matlab.7d87102ab9b9f9e60a2c.png",
     "static/media/STM32.png": "/personal-portfolio/static/media/STM32.a435f82c596e4c23f8e9.png",
+    "static/media/mac_formula_car.webp": "/personal-portfolio/static/media/mac_formula_car.80ec2365852f98c50a45.webp",
     "static/media/verilog.png": "/personal-portfolio/static/media/verilog.9ef5477597cf527669f7.png",
     "static/media/processor.png": "/personal-portfolio/static/media/processor.78e4535d9f64cdc6a36e.png",
     "static/media/Resume_AryanKarnati.pdf": "/personal-portfolio/static/media/Resume_AryanKarnati.fdf42be1e76690e17fde.pdf",
@@ -21,11 +22,11 @@
     "static/media/git.png": "/personal-portfolio/static/media/git.6c050f34460a4f1fa407.png",
     "index.html": "/personal-portfolio/index.html",
     "main.560be21e.css.map": "/personal-portfolio/static/css/main.560be21e.css.map",
-    "main.25783fac.js.map": "/personal-portfolio/static/js/main.25783fac.js.map",
+    "main.24618171.js.map": "/personal-portfolio/static/js/main.24618171.js.map",
     "787.4b24f717.chunk.js.map": "/personal-portfolio/static/js/787.4b24f717.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.560be21e.css",
-    "static/js/main.25783fac.js"
+    "static/js/main.24618171.js"
   ]
 }
