@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/personal-portfolio/static/css/main.5f96b969.css",
-    "main.js": "/personal-portfolio/static/js/main.f6594545.js",
+    "main.js": "/personal-portfolio/static/js/main.1ac771f6.js",
     "static/js/787.4b24f717.chunk.js": "/personal-portfolio/static/js/787.4b24f717.chunk.js",
     "static/media/Lidar.png": "/personal-portfolio/static/media/Lidar.dbea485bc0555bbcebef.png",
     "static/media/aryan.png": "/personal-portfolio/static/media/aryan.e80fd2324659f30de912.png",
@@ -13,7 +13,6 @@
     "static/media/verilog.png": "/personal-portfolio/static/media/verilog.9ef5477597cf527669f7.png",
     "static/media/processor.png": "/personal-portfolio/static/media/processor.78e4535d9f64cdc6a36e.png",
     "static/media/Resume_AryanKarnati.pdf": "/personal-portfolio/static/media/Resume_AryanKarnati.fdf42be1e76690e17fde.pdf",
-    "static/media/Qonnector.png": "/personal-portfolio/static/media/Qonnector.4865592cdcc5c2c6c95d.png",
     "static/media/vscode.png": "/personal-portfolio/static/media/vscode.1a9eabec27426814ce3b.png",
     "static/media/c++.png": "/personal-portfolio/static/media/c++.980d16570816c84660b4.png",
     "static/media/ltspice.png": "/personal-portfolio/static/media/ltspice.1c3c019d67d7688c58e7.png",
@@ -23,11 +22,11 @@
     "static/media/git.png": "/personal-portfolio/static/media/git.6c050f34460a4f1fa407.png",
     "index.html": "/personal-portfolio/index.html",
     "main.5f96b969.css.map": "/personal-portfolio/static/css/main.5f96b969.css.map",
-    "main.f6594545.js.map": "/personal-portfolio/static/js/main.f6594545.js.map",
+    "main.1ac771f6.js.map": "/personal-portfolio/static/js/main.1ac771f6.js.map",
     "787.4b24f717.chunk.js.map": "/personal-portfolio/static/js/787.4b24f717.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5f96b969.css",
-    "static/js/main.f6594545.js"
+    "static/js/main.1ac771f6.js"
   ]
 }
