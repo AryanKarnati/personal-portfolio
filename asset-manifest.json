@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/personal-portfolio/static/css/main.46bcfa40.css",
-    "main.js": "/personal-portfolio/static/js/main.6a3704f7.js",
+    "main.js": "/personal-portfolio/static/js/main.28636589.js",
     "static/js/787.4b24f717.chunk.js": "/personal-portfolio/static/js/787.4b24f717.chunk.js",
     "static/media/aryan.png": "/personal-portfolio/static/media/aryan.e80fd2324659f30de912.png",
     "static/media/Resume_AryanKarnati.pdf": "/personal-portfolio/static/media/Resume_AryanKarnati.fdf42be1e76690e17fde.pdf",
     "static/media/images.png": "/personal-portfolio/static/media/images.c8cf96b519cbbb8bb025.png",
     "index.html": "/personal-portfolio/index.html",
     "main.46bcfa40.css.map": "/personal-portfolio/static/css/main.46bcfa40.css.map",
-    "main.6a3704f7.js.map": "/personal-portfolio/static/js/main.6a3704f7.js.map",
+    "main.28636589.js.map": "/personal-portfolio/static/js/main.28636589.js.map",
     "787.4b24f717.chunk.js.map": "/personal-portfolio/static/js/787.4b24f717.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.46bcfa40.css",
-    "static/js/main.6a3704f7.js"
+    "static/js/main.28636589.js"
   ]
 }
