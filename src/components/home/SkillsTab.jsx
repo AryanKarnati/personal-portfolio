@@ -1,38 +1,29 @@
 import React from "react";
 import Col from "react-bootstrap/Col";
-import SkillsBar from "./SkillsBar";
+import '../../scss/custom.scss';
 
-function SkillsSection({ skills, isScrolled }) {
+const SkillsCarousel = ({ skills }) => {
+  // Duplicate the skills array for seamless looping
+  const allSkills = [...skills, ...skills];
   return (
-    <>
-      {skills.map((skill, index) => (
-        <SkillsBar
-          key={`${skill}-${index}`}
-          skill={skill.name}
-          value={skill.value}
-          isScrolled={isScrolled}
-        />
-      ))}
-    </>
+    <div className="skills-carousel-outer">
+      <div className="skills-carousel-inner">
+        {allSkills.map((skill, idx) => (
+          <div className="skill-carousel-item" key={idx}>
+            <img src={skill.icon} alt={skill.name} className="skill-carousel-img" />
+            <div className="skill-carousel-label">{skill.name}</div>
+          </div>
+        ))}
+      </div>
+    </div>
   );
-}
+};
 
-function SkillsTab({ skills, isScrolled }) {
+function SkillsTab({ skills }) {
   return (
-    <>
-      <Col xs={12} md={6}>
-        <SkillsSection
-          skills={skills.slice(0, Math.floor(skills.length / 2))}
-          isScrolled={isScrolled}
-        />
-      </Col>
-      <Col xs={12} md={6}>
-        <SkillsSection
-          skills={skills.slice(Math.floor(skills.length / 2), skills.length)}
-          isScrolled={isScrolled}
-        />
-      </Col>
-    </>
+    <Col xs={12}>
+      <SkillsCarousel skills={skills} />
+    </Col>
   );
 }
 

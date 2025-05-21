@@ -42,7 +42,7 @@ const about = {
   imageLink: require("../editable-stuff/aryan.png"),
   imageSize: 375,
   message:
-    "My name is Aryan Karnati. I’m an Electrical Engineering Co-op student at McMaster University with a strong interest in embedded systems, digital design, and hardware development. I’m passionate about applying my technical skills to solve real-world problems and continuously learning through hands-on experiences. In my free time, I enjoy exploring new technologies and building personal projects.",
+    "My name is Aryan Karnati. I'm an Electrical Engineering Co-op student at McMaster University with a strong interest in embedded systems, digital design, and hardware development. I'm passionate about applying my technical skills to solve real-world problems and continuously learning through hands-on experiences. In my free time, I enjoy exploring new technologies and building personal projects.",
   resume: require("../editable-stuff/Resume_AryanKarnati.pdf"),
 };
 
@@ -53,18 +53,26 @@ const experiences = {
   data: [
     {
       role: 'Quality Managment Intern',
-      company: "Mackenzie Investments",
-      // team: "Team: Deploys",
+      company: "IGM Financial",
       customWidth: "40%",
-      companylogo: require('../assets/img/macken.png'),
+      companylogo: require('../assets/img/igm3.jpg'),
+      backgroundImage: require('../assets/img/IGM.jpg'),
       date: 'May 2025 – Present',
+      link: "https://www.igmfinancial.com/",
+      details: [
+        "Improved process efficiency by 20% through automation."
+      ]
     },
     {
       role: 'High Voltage Circuit Designer',
-      company: "MAC Formula Electric",
-      // team: "Team: Deploys",
+      company: "McMaster Formula Electric",
       companylogo: require('../assets/img/images.png'),
+      backgroundImage: require('../assets/img/mac_formula_car.webp'),
       date: 'September 2024 – Present',
+      link: "https://macformularacing.com/",
+      details: [
+        "Designed and simulated the Insulation Monitoring Device (IMD) Test Board using Altium Designer and LTSpice"
+      ]
     },
   ]
 }
@@ -79,7 +87,7 @@ const repos = {
   heading: "Recent Projects",
   gitHubUsername: "AryanKarnati", //i.e."johnDoe12Gh"
   reposLength: 0,
-  specificRepos: ["Spatial-Mapping-LIDAR-System","STM32-Bootloader","QonnectR", "personal-portfolio"],
+  specificRepos: ["Single-Cycle-RISCV-Processor","Spatial-Mapping-LIDAR-System","STM32-Bootloader","QonnectR"],
 };
 
 // Leadership SECTION
@@ -111,24 +119,23 @@ const skills = {
   show: true,
   heading: "Skills",
   hardSkills: [
-    { name: "C/C++", value: 95 },
-    { name: "Python", value: 80 },
-    { name: "SystemVerilog", value: 90 },
-    { name: "Verilog", value: 95 },
-    { name: "VHDL", value: 75 },
-    { name: "Java", value: 60 },
-    { name: "Git", value: 70 },
-    { name: "Bash", value: 70 },
+    { name: "C/C++", icon: require("../assets/img/c++.png") },
+    { name: "Python", icon: require("../assets/img/python.jpg") },
+    { name: "SystemVerilog", icon: require("../assets/img/sv.png") },
+    { name: "Verilog", icon: require("../assets/img/verilog.png") },
+    { name: "VHDL", icon: require("../assets/img/vhdl.png") },
+    { name: "Java", icon: require("../assets/img/java.png") },
+    { name: "Git", icon: require("../assets/img/git.png") },
+    { name: "Bash", icon: require("../assets/img/bash.png") },
   ],
   softSkills: [
-    { name: "MATLAB", value: 80 },
-    { name: "Quartus", value: 90 },
-    { name: "ModelSim", value: 75 },
-    { name: "Altium Desginer", value: 85 },
-    { name: "Keil uVision", value: 75 },
-    { name: "LTSpice", value: 80 },
-    { name: "VS Code", value: 70 },
-    { name: "SymbiYosys", value: 70 },
+    { name: "MATLAB", icon: require("../assets/img/matlab.png") },
+    { name: "Quartus", icon: require("../assets/img/quartus.png") },
+    { name: "ModelSim", icon: require("../assets/img/modelsim.png") },
+    { name: "Altium Desginer", icon: require("../assets/img/altium.png") },
+    { name: "Keil uVision", icon: require("../assets/img/keil.jpg") },
+    { name: "LTSpice", icon: require("../assets/img/ltspice.png") },
+    { name: "VS Code", icon: require("../assets/img/vscode.png") },
   ],
 };
 
@@ -137,8 +144,8 @@ const getInTouch = {
   show: true,
   heading: "Get In Touch",
   message:
-    "I'm currently looking for embedded systems and digital design/verification internships. If you have any opportunities or would like to connect, please feel free to reach out!",
-  email: "19aryank@gmail.com@gmail.com",
+    "I'm currently looking for embedded systems and digital design/verification internships. If you have any opportunities or would like to connect, please feel free to reach out",
+  email: "19aryank@gmail.com",
 };
 
 

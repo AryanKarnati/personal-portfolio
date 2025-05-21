@@ -49,38 +49,42 @@ const Navigation = React.forwardRef((props, ref) => {
               <Link to={process.env.PUBLIC_URL + "/blog"}>Blog</Link>
             </NavLink>
           } */}
-          {repos.show && (
-
-            <NavLink
-              href={process.env.PUBLIC_URL + "/#projects"}
-            >
-              Projects
-            </NavLink>
-          )}
+                  {about.show && (
           <NavLink
             className="nav-item lead"
-            href={about.resume}
-            target="_blank"
-            rel="noreferrer noopener"
+            href={process.env.PUBLIC_URL + "/#about"}
           >
-            Resume
+            About
           </NavLink>
-          {about.show && (
-            <NavLink
-              className="nav-item lead"
-              href={process.env.PUBLIC_URL + "/#about"}
-            >
-              About
-            </NavLink>
-          )}
-          {skills.show && (
-            <NavLink
-              className="nav-item lead"
-              href={process.env.PUBLIC_URL + "/#skills"}
-            >
-              Skills
-            </NavLink>
-          )}
+        )}
+        <NavLink
+          className="nav-item lead"
+          href={about.resume}
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          Resume
+        </NavLink>
+        <NavLink
+          className="nav-item lead"
+          href={process.env.PUBLIC_URL + "/#experience"}
+        >
+          Experiences
+        </NavLink>
+        {repos.show && (
+          <NavLink href={process.env.PUBLIC_URL + "/#projects"}>
+            Projects
+          </NavLink>
+        )}
+        {skills.show && (
+          <NavLink
+            className="nav-item lead"
+            href={process.env.PUBLIC_URL + "/#skills"}
+          >
+            Skills
+          </NavLink>
+        )}
+
         </Nav>
       </Navbar.Collapse>
     </Navbar>

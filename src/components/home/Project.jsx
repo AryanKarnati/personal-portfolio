@@ -54,13 +54,43 @@ const Project = ({ heading, username, length, specfic }) => {
     fetchRepos();
   }, [fetchRepos]);
 
+  // Map project names to images
+  const projectImages = {
+    'personal-portfolio': require('../../assets/img/pp.png'),
+    'spatial-mapping-lidar-system': require('../../assets/img/Lidar.png'),
+    'Spatial-Mapping-LIDAR-System': require('../../assets/img/Lidar.png'),
+    'lidar mapping': require('../../assets/img/Lidar.png'),
+    'Lidar Mapping': require('../../assets/img/Lidar.png'),
+    'single-cycle-riscv-processor': require('../../assets/img/processor.png'),
+    'Single-Cycle-RISCV-Processor': require('../../assets/img/processor.png'),
+    'processor': require('../../assets/img/processor.png'),
+    'stm32-bootloader': require('../../assets/img/STM32.png'),
+    'STM32-Bootloader': require('../../assets/img/STM32.png'),
+    'stm32': require('../../assets/img/STM32.png'),
+    'STM32': require('../../assets/img/STM32.png'),
+    'qonnector': require('../../assets/img/Qonnector.png'),
+    'Qonnector': require('../../assets/img/Qonnector.png'),
+    'QonnectR': require('../../assets/img/Qonnector.png'),
+  };
+
+  // Add image property to each project if available (case-insensitive)
+  const projectsWithImages = projectsArray.map((project) => {
+    const name = project.name || '';
+    const image =
+      projectImages[name] ||
+      projectImages[name.toLowerCase()] ||
+      projectImages[name.toUpperCase()] ||
+      undefined;
+    return { ...project, image };
+  });
+
   return (
     <Jumbotron fluid id="projects" className="bg-light m-0">
       <Container className="">
         <h2 className="display-4 pb-5 text-center">{heading}</h2>
         <Row>
-          {projectsArray.length
-            ? projectsArray.map((project, index) => (
+          {projectsWithImages.length
+            ? projectsWithImages.map((project, index) => (
               <ProjectCard
                 key={`project-card-${index}`}
                 id={`project-card-${index}`}

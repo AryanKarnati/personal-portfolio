@@ -1,8 +1,18 @@
 import React, { useState, useEffect, useCallback } from "react";
 import Col from "react-bootstrap/Col";
-import Card from "react-bootstrap/Card";
 import Skeleton from "react-loading-skeleton";
 import axios from "axios";
+import '../../scss/custom.scss';
+
+const PLACEHOLDER_IMG = "https://via.placeholder.com/420x220?text=Project+Image";
+const LEARN_MORE_LINK = "https://www.igmfinancial.com/";
+
+const LEARN_MORE_LINKS = {
+  'Single-Cycle-RISCV-Processor': 'https://github.com/AryanKarnati/Single-Cycle-RISCV-Processor',
+  'STM32-Bootloader': 'https://github.com/AryanKarnati/STM32-Bootloader/blob/main/CustomBootloader_Report.pdf',
+  'Spatial-Mapping-LIDAR-System': 'https://github.com/AryanKarnati/Spatial-Mapping-LIDAR-System/blob/main/COMPENG%202DX3_FinalProjectReport_AryanKarnati.pdf',
+  'QonnectR': 'https://qonnectr.vercel.app/'
+};
 
 const ProjectCard = ({ value }) => {
   const {
@@ -12,44 +22,40 @@ const ProjectCard = ({ value }) => {
     stargazers_count,
     languages_url,
     pushed_at,
+    image // Optionally add image to your repo data if available
   } = value;
+  const learnMoreLink = LEARN_MORE_LINKS[name] || LEARN_MORE_LINK;
   return (
-    <Col md={6}>
-      <Card className="card shadow-lg p-3 mb-5 bg-white rounded">
-        <Card.Body>
-          <Card.Title as="h5">{name || <Skeleton />} </Card.Title>
-          <Card.Text>{(!description) ? "" : description || <Skeleton count={3} />} </Card.Text>
-          {svn_url ? <CardButtons svn_url={svn_url} /> : <Skeleton count={2} />}
-          <hr />
-          {languages_url ? (
-            <Language languages_url={languages_url} repo_url={svn_url} />
-          ) : (
-            <Skeleton count={3} />
-          )}
-          {value ? (
-            <CardFooter star_count={stargazers_count} repo_url={svn_url} pushed_at={pushed_at} />
-          ) : (
-            <Skeleton />
-          )}
-        </Card.Body>
-      </Card>
+    <Col xs={12} md={6} className="d-flex align-items-stretch">
+      <div className="modern-project-card">
+        <h3 className="project-title">{name || <Skeleton />}</h3>
+        <img
+          src={image || PLACEHOLDER_IMG}
+          alt={name}
+          className="project-image"
+        />
+        <p className="project-description">{(!description) ? "" : description || <Skeleton count={3} />}</p>
+        <div className="project-buttons">
+          <a
+            className="project-btn"
+            href={svn_url}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Repo
+          </a>
+          <a
+            className="project-btn"
+            href={learnMoreLink}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Learn More
+          </a>
+        </div>
+        <hr />
+      </div>
     </Col>
-  );
-};
-
-const CardButtons = ({ svn_url }) => {
-  return (
-    <div className="d-grid gap-2 d-md-block">
-      <a
-        href={`${svn_url}/archive/master.zip`}
-        className="btn btn-outline-secondary mx-2"
-      >
-        <i className="fab fa-github" /> Clone Project
-      </a>
-      <a href={svn_url} target=" _blank" className="btn btn-outline-secondary mx-2">
-        <i className="fab fa-github" /> Repo
-      </a>
-    </div>
   );
 };
 
@@ -85,15 +91,13 @@ const Language = ({ languages_url, repo_url }) => {
             key={language}
             className="card-link"
             href={repo_url + `/search?l=${language}`}
-            target=" _blank"
+            target="_blank"
             rel="noopener noreferrer"
           >
             <span className="badge bg-light text-dark">
-              {language}:{" "}
-              {Math.trunc((data[language] / total_count) * 1000) / 10} %
+              {language}: {Math.trunc((data[language] / total_count) * 1000) / 10} %
             </span>
           </a>
-
         ))
         : "code yet to be deployed."}
     </div>
@@ -128,7 +132,7 @@ const CardFooter = ({ star_count, repo_url, pushed_at }) => {
     <p className="card-text">
       <a
         href={repo_url + "/stargazers"}
-        target=" _blank"
+        target="_blank"
         className="text-dark text-decoration-none"
       >
         <span className="text-dark card-link mr-4">
